@@ -3,7 +3,6 @@ package com.api.parkingcontrolapi.controllers;
 import com.api.parkingcontrolapi.dtos.ParkingSpotDto;
 import com.api.parkingcontrolapi.models.ParkingSpotModel;
 import com.api.parkingcontrolapi.services.ParkingSpotService;
-import org.apache.coyote.Response;
 import org.springframework.beans.BeanUtils;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -53,10 +52,43 @@ public class ParkingSpotController {
     @GetMapping("/{id}")
     public ResponseEntity<Object> getOneParkingSpot(@PathVariable(value = "id") UUID id) {
         Optional<ParkingSpotModel> parkingSpotModelOptional = parkingSpotService.findById(id);
-        if (!parkingSpotModelOptional.isPresent()) {
+        if (parkingSpotModelOptional.isEmpty()) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Parking Spot not found.");
         } else {
             return ResponseEntity.status(HttpStatus.OK).body(parkingSpotModelOptional.get());
         }
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Object> deleteParkingSpot(@PathVariable(value = "id") UUID id) {
+        Optional<ParkingSpotModel> parkingSpotModelOptional = parkingSpotService.findById(id);
+        if (parkingSpotModelOptional.isEmpty()) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Parking Spot not found.");
+        } else {
+            parkingSpotService.delete(parkingSpotModelOptional.get());
+            return ResponseEntity.status(HttpStatus.OK).body("Parking Spot deleted successfully.");
+        }
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<Object> updateParkingSpot(@PathVariable(value = "id") UUID id,
+                                                    @RequestBody @Valid ParkingSpotDto parkingSpotDto) {
+        Optional<ParkingSpotModel> parkingSpotModelOptional = parkingSpotService.findById(id);
+        if (parkingSpotModelOptional.isEmpty()) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Parking Spot not found");
+        } else {
+            var parkingSpotModel = parkingSpotModelOptional.get();
+            parkingSpotModel.setParkingSpotNumber(parkingSpotDto.getParkingSpotNumber());
+            parkingSpotModel.setLicensePlateCar(parkingSpotDto.getLicensePlateCar());
+            parkingSpotModel.setModelCar(parkingSpotDto.getModelCar());
+            parkingSpotModel.setBrandCar(parkingSpotDto.getBrandCar());
+            parkingSpotModel.setColorCar(parkingSpotDto.getColorCar());
+            parkingSpotModel.setResponsibleName(parkingSpotDto.getResponsibleName());
+            parkingSpotModel.setApartment(parkingSpotDto.getApartment());
+            parkingSpotModel.setBlock(parkingSpotDto.getBlock());
+
+            return ResponseEntity.status(HttpStatus.OK).body(parkingSpotService.save(parkingSpotModel));
+        }
+
     }
 }

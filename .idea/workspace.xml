@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="075322e7-473b-4afe-8171-e16850e298ab" name="Changes" comment="Update new branch and added get by id method">
+    <list default="true" id="075322e7-473b-4afe-8171-e16850e298ab" name="Changes" comment="Delete function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/api/parkingcontrolapi/controllers/ParkingSpotController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/parkingcontrolapi/controllers/ParkingSpotController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/parkingcontrolapi/services/ParkingSpotService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/parkingcontrolapi/services/ParkingSpotService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/api/parkingcontrolapi/controllers/ParkingSpotController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/parkingcontrolapi/controllers/ParkingSpotController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/api/parkingcontrolapi/services/ParkingSpotService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/parkingcontrolapi/services/ParkingSpotService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tribute-page" beforeDir="false" afterPath="$PROJECT_DIR$/../tribute-page" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +87,7 @@
       <workItem from="1668287903310" duration="65000" />
       <workItem from="1668287980910" duration="780000" />
       <workItem from="1668288773836" duration="40000" />
-      <workItem from="1668288828451" duration="1204000" />
+      <workItem from="1668288828451" duration="1365000" />
     </task>
     <task id="LOCAL-00001" summary="Initial project">
       <created>1668079735415</created>
@@ -121,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668287643648</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Delete function">
+      <created>1668290076151</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668290076151</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,7 +150,8 @@
     <MESSAGE value="Update" />
     <MESSAGE value="Save method implementation" />
     <MESSAGE value="Update new branch and added get by id method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update new branch and added get by id method" />
+    <MESSAGE value="Delete function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete function" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -4,21 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="075322e7-473b-4afe-8171-e16850e298ab" name="Changes" comment="Pagination">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/parkingcontrolapi/configs/security/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../navbar-test/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../navbar-test/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../navbar-test/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="075322e7-473b-4afe-8171-e16850e298ab" name="Changes" comment="Added security">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/parkingcontrolapi/configs/security/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/parkingcontrolapi/models/UserModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/parkingcontrolapi/repositories/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking-control-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/parking-control-api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/api/parkingcontrolapi/models/ParkingSpotModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/parkingcontrolapi/models/ParkingSpotModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/parkingcontrolapi/ParkingControlApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/parkingcontrolapi/ParkingControlApiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/parkingcontrolapi/configs/security/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/parkingcontrolapi/configs/security/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/parkingcontrolapi/ParkingControlApiApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/parkingcontrolapi/ParkingControlApiApplication.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -34,11 +35,15 @@
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
       <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
     <option name="myId2Visible">
       <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
         <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
@@ -75,7 +80,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.idesettings.quicklists&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;f34ee02585be69d26c70481a7178b5e8&quot;
   }
 }</component>
@@ -108,7 +113,9 @@
       <workItem from="1668288773836" duration="40000" />
       <workItem from="1668288828451" duration="5639000" />
       <workItem from="1668650589044" duration="76000" />
-      <workItem from="1669196425980" duration="1995000" />
+      <workItem from="1669196425980" duration="7523000" />
+      <workItem from="1669208906652" duration="10000" />
+      <workItem from="1669245052793" duration="2142000" />
     </task>
     <task id="LOCAL-00001" summary="Initial project">
       <created>1668079735415</created>
@@ -166,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668303370515</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added security">
+      <created>1669198432163</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1669198432163</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,7 +209,8 @@
     <MESSAGE value="Delete function" />
     <MESSAGE value="Better way to implement method put" />
     <MESSAGE value="Pagination" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pagination" />
+    <MESSAGE value="Added security" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added security" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

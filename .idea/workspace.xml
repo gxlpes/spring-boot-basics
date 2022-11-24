@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="075322e7-473b-4afe-8171-e16850e298ab" name="Changes" comment="Implementation of auth using JPA">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/parkingcontrolapi/enums/RoleName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/parkingcontrolapi/models/RoleModel.java" afterDir="false" />
+    <list default="true" id="075322e7-473b-4afe-8171-e16850e298ab" name="Changes" comment="Relantionship with users and auth">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/parkingcontrolapi/configs/security/WebSecurityConfigV2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/api/parkingcontrolapi/configs/security/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/parkingcontrolapi/configs/security/UserDetailsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/parkingcontrolapi/models/UserModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/parkingcontrolapi/models/UserModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/parkingcontrolapi/configs/security/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/parkingcontrolapi/configs/security/WebSecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +22,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -114,7 +113,8 @@
       <workItem from="1668650589044" duration="76000" />
       <workItem from="1669196425980" duration="7523000" />
       <workItem from="1669208906652" duration="10000" />
-      <workItem from="1669245052793" duration="4253000" />
+      <workItem from="1669245052793" duration="6790000" />
+      <workItem from="1669257417988" duration="534000" />
     </task>
     <task id="LOCAL-00001" summary="Initial project">
       <created>1668079735415</created>
@@ -186,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669247545015</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Relantionship with users and auth">
+      <created>1669249955483</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1669249955483</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,7 +224,8 @@
     <MESSAGE value="Pagination" />
     <MESSAGE value="Added security" />
     <MESSAGE value="Implementation of auth using JPA" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementation of auth using JPA" />
+    <MESSAGE value="Relantionship with users and auth" />
+    <option name="LAST_COMMIT_MESSAGE" value="Relantionship with users and auth" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
